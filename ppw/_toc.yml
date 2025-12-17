@@ -41,3 +41,10 @@ chapters:
 
 - file: word_graph_pdf
   title: Word Graph PDF
+
+- file: analisis_dataset_nasa
+  title: Analisis Dataset Nasa
+
+- file: word_graph_UAS
+  title: Word Graph Uas
+  
