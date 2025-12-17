@@ -11,6 +11,7 @@ chapters:
   - file: crawlingberita
   - file: crawlingptatrunojoyo
   - file: ptatrunojoyomanajemen
+  - file: crawling_twiter
 - file: preprocessing_abstrak_indonesia
   title: Preprocessing Abstrak Indonesia
 
@@ -37,3 +38,6 @@ chapters:
 
 - file: pta_graph_analysis
   title: PTA Graph Analysis
+
+- file: word_graph_pdf
+  title: Word Graph PDF

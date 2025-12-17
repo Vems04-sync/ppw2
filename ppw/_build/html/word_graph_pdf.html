@@ -1,0 +1,1327 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Word Graph PDF &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'word_graph_pdf';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Analisis Graph Data dari pta_graph.xlsx" href="pta_graph_analysis.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/220411100095.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/220411100095.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    PROFILE
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pengantar.html">Pengantar Pencarian dan Penambangan Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linkgraphscraping.html">Link Graph Scraping Teknik Industri</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="crawlingdata.html">Crawling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="crawlingberita.html">Data Berita CNN Indonesia</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="crawlingptatrunojoyo.html">Crawling PTA Trunojoyo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ptatrunojoyomanajemen.html">Crawling PTA Trunojoyo Prodi Manajemen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="crawling_twiter.html">Crawling Twiter</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="preprocessing_abstrak_indonesia.html">Preprocessing Abstrak Bahasa Indonesia</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="ekstraksi_fitur_tfidf_abstrak.html">Ekstraksi Fitur TF-IDF Abstrak</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cbow_embeding_abstrak.html">CBOW Embedding Abstrak</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preprocessing_berita.html">Preprocessing Berita</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="ekstraksi_fitur_tfidf_berita.html">Ekstraksi Fitur TF-IDF Berita</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cbow_embeding_berita.html">CBOW Embedding Berita</a></li>
+<li class="toctree-l1"><a class="reference internal" href="klasifikasi_lda_berita.html">Klasifikasi LDA Berita</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uts.html">UTS PPW</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="pta_graph_analysis.html">PTA Graph Analysis</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Word Graph PDF</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fword_graph_pdf.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/word_graph_pdf.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Word Graph PDF</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="word-graph-pdf">
+<h1>Word Graph PDF<a class="headerlink" href="#word-graph-pdf" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!pip install --upgrade pymupdf
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pymupdf in /usr/local/lib/python3.12/dist-packages (1.26.7)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">cd</span> <span class="o">/</span><span class="n">content</span><span class="o">/</span><span class="n">drive</span><span class="o">/</span><span class="n">MyDrive</span><span class="o">/</span><span class="n">PPW</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Errno 2] No such file or directory: &#39;/content/drive/MyDrive/PPW&#39;
+/content
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pymupdf</span>
+
+<span class="n">doc</span> <span class="o">=</span> <span class="n">pymupdf</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;Dampak-Investasi-Cryptocurrency.pdf&quot;</span><span class="p">)</span> <span class="c1"># open a document</span>
+<span class="n">out</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;output.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="c1"># create a text output</span>
+<span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="n">doc</span><span class="p">:</span> <span class="c1"># iterate the document pages</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf8&quot;</span><span class="p">)</span> <span class="c1"># get plain text (is in UTF-8)</span>
+    <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="c1"># write text of page</span>
+    <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">bytes</span><span class="p">((</span><span class="mi">12</span><span class="p">,)))</span> <span class="c1"># write page delimiter (form feed 0x0C)</span>
+<span class="n">out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>%%capture
+!pip install nltk
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>  <span class="c1"># hanya perlu sekali</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt_tab&#39;</span><span class="p">)</span>  <span class="c1"># opsional, untuk versi terbaru NLTK (≥3.8.2)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package punkt_tab to /root/nltk_data...
+[nltk_data]   Package punkt_tab is already up-to-date!
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;output.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">teks</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">teks</span><span class="p">[:</span><span class="mi">200</span><span class="p">])</span>  <span class="c1"># tampilkan 200 karakter pertama</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sanskara Akuntansi dan Keuangan 
+Vol. 2, No.02, Januari 2024, hal. 90-99 
+ISSN: 2985-7805, DOI: 10.58812/sak.v2i02 
+ 
+ 
+ 
+Journal homepage: https://sj.eastasouth-institute.com/index.php/sak 
+Analisis 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install: pip install nltk</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
+
+
+<span class="c1">#text = &quot;Ini adalah kalimat pertama. Ini kalimat kedua? Ya!&quot;</span>
+<span class="n">sentences</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">sent_tokenize</span><span class="p">(</span><span class="n">teks</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sentences</span><span class="p">)</span>
+<span class="c1"># Output: [&#39;Ini adalah kalimat pertama.&#39;, &#39;Ini kalimat kedua?&#39;, &#39;Ya!&#39;]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Sanskara Akuntansi dan Keuangan \nVol.&#39;, &#39;2, No.02, Januari 2024, hal.&#39;, &#39;90-99 \nISSN: 2985-7805, DOI: 10.58812/sak.v2i02 \n \n \n \nJournal homepage: https://sj.eastasouth-institute.com/index.php/sak \nAnalisis Dampak Investasi Cryptocurrency dan Volatilitas Pasar \nterhadap Profitabilitas Perusahaan Energi di Indonesia \nLoso Judijanto1, Eva Yuniarti Utami2, Erwina Kartika Devi3, Sarmiati4, Eko Sudarmanto5 \n1 IPOSS Jakarta, Indonesia, losojudijantobumn@gmail.com \n2 Universitas Sebelas Maret, eva.yuniarti.utami@staff.uns.ac.id \n3 STIE Syariah Al-Mujaddid, erwinaelkhalifi@gmail.com \n4 STIE Syariah Al-Mujaddid, amisarmiati95@gmail.com \n5 Universitas Muhammadiyah Tangerang, ekosudarmanto.umt@gmail.com \nArticle Info \n \nABSTRAK  \nArticle history: \nReceived Jan, 2024 \nRevised Jan, 2024 \nAccepted Jan, 2024 \n \n \nPenelitian ini menyelidiki dampak investasi mata uang kripto dan \nvolatilitas pasar terhadap profitabilitas perusahaan energi di Indonesia \nmelalui analisis kuantitatif.&#39;, &#39;Penelitian ini melibatkan sampel sebanyak \n200 partisipan, termasuk investor mata uang kripto dan eksekutif \nperusahaan energi.&#39;, &#39;Analisis model pengukuran menetapkan validitas \ndan reliabilitas konstruk (Investasi Mata Uang Kripto, Volatilitas Pasar, \ndan Profitabilitas), dan analisis model struktural mengungkapkan \nhubungan yang signifikan antara variabel-variabel ini.&#39;, &#39;Secara \nmengejutkan, hasil penelitian menunjukkan bahwa peningkatan \ninvestasi mata uang kripto dan volatilitas pasar yang lebih tinggi \ndikaitkan dengan peningkatan profitabilitas perusahaan energi.&#39;, &#39;Indeks \nkecocokan model mengkonfirmasi kekokohan model yang diusulkan.&#39;, &#39;Temuan ini memiliki implikasi bagi investor, pembuat kebijakan, dan \npemangku kepentingan industri, yang menekankan perlunya \npengambilan keputusan yang tepat dalam menavigasi lanskap mata \nuang kripto dan industri tradisional yang terus berkembang.&#39;, &#39;ABSTRACT  \nThis research investigates the impact of Cryptocurrency investments and \nmarket volatility on the profitability of energy companies in Indonesia through \nquantitative analysis.&#39;, &#39;The study involved a sample of 200 participants, \nincluding Cryptocurrency investors and executives of energy companies.&#39;, &#39;Analysis of measurement models establishes construct validity and reliability \n(Cryptocurrency Investment, Market Volatility, and Profitability), and \nanalysis of structural models reveals significant relationships between these \nvariables.&#39;, &#39;Surprisingly, the results showed that increased Cryptocurrency \ninvestments and higher market volatility were associated with increased \nprofitability of energy companies.&#39;, &#39;The model fit index confirms the robustness \nof the proposed model.&#39;, &#39;The findings have implications for investors, \npolicymakers, and industry stakeholders, who emphasize the need for informed \ndecision-making \nin \nnavigating \nthe \never-evolving \nlandscape \nof \ncryptocurrencies and traditional industries.&#39;, &#39;Kata Kunci: \nCryptocurrency, Ekonomi Digital, \nPengelolaan Risiko, Teknologi \nBlockchain, Volatilitas Pasar \n \nKeywords: \nBlockchain \nTechnology, \nCryptocurrencies, \nDigital \nEconomy, Market Volatility, Risk \nManagement \nThis is an open access article under the CC BY-SA license.&#39;, &#39;Sanskara Akuntansi dan Keuangan (SAK)  \n \n \n \n \n \n      \uf072 \nVol.&#39;, &#39;2, No.02, Januari 2024, hal.&#39;, &#39;90-99 \n91 \nCorresponding Author: \nName: Loso Judijanto \nInstitution: IPOSS Jakarta, Indonesia \nEmail: losojudijantobumn@gmail.com \n1.&#39;, &#39;PENDAHULUAN \nMata uang kripto, yang dipimpin oleh Bitcoin, telah muncul sebagai kelas aset yang \nsignifikan dalam lanskap keuangan global.&#39;, &#39;Mereka telah berevolusi dari keingintahuan teknologi \nmenjadi pemain penting di arena investasi.&#39;, &#39;Investigasi komprehensif terhadap mata uang kripto di \nTurki mengungkapkan potensi mereka untuk mempercepat transaksi keuangan, mengurangi biaya, \nmeningkatkan ketertelusuran, dan memudahkan pembayaran internasional (Kahraman, 2023).&#39;, &#39;Layanan keuangan berbasis mata uang kripto telah memperluas fungsionalitasnya, memungkinkan \npengguna untuk membeli, menjual, memperdagangkan, menyimpan, mengelola, dan menerima \npembayaran dalam mata uang kripto (Luchkin et al., 2020).&#39;, &#39;Kemunculan mata uang virtual secara \nmassal berdasarkan teknologi blockchain telah menimbulkan perdebatan mengenai regulasi dan \nrisikonya (Pataki &amp; Zörög, 2023).&#39;, &#39;Sebuah studi yang membandingkan imbal hasil saham FAANG \ndan Bitcoin tidak menemukan perbedaan yang signifikan pada basis yang disesuaikan dengan risiko, \nmenunjukkan bahwa Bitcoin mungkin merupakan investasi pilihan bagi investor yang mencari \nrisiko (Miller &amp; Prondzinski, 2023).&#39;, &#39;Mata uang kripto, khususnya teknologi blockchain, memiliki \npotensi untuk merevolusi kemakmuran ekonomi, menarik minat berbagai negara dan lembaga \nkeuangan (GEHLOT, 2023).&#39;, &#39;Volatilitas yang melekat pada pasar mata uang kripto memiliki implikasi yang luas di luar \npasar keuangan tradisional, yang berdampak pada berbagai sektor termasuk industri energi.&#39;, &#39;Fluktuasi harga mata uang kripto yang cepat dan tidak dapat diprediksi berkontribusi pada \nvolatilitas ini.&#39;, &#39;Studi oleh Donoiu &amp; Iacob (2023) mengonfirmasi adanya imbal hasil yang signifikan \ndan limpahan volatilitas antara mata uang kripto dan pasar komoditas.&#39;, &#39;Mereka menemukan bahwa \nemas dapat berfungsi sebagai tempat berlindung yang aman selama ketidakpastian ekonomi, \nbertindak sebagai lindung nilai terhadap fluktuasi harga gas alam dan minyak mentah.&#39;, &#39;Selain itu, \nBitcoin dan Ethereum berkorelasi positif satu sama lain tetapi berkorelasi negatif dengan emas dan \nminyak mentah, menunjukkan bahwa mata uang kripto ini dapat menjadi alat diversifikasi bagi \ninvestor yang ingin mengurangi eksposur ke aset tradisional (Nam, 2023).&#39;, &#39;Investasi mata uang kripto semakin populer di Indonesia, dengan jumlah investor yang \nmeningkat lebih dari 50% pada tahun 2021 dibandingkan tahun sebelumnya (Restuputri et al., 2023).&#39;, &#39;Minat yang terus meningkat terhadap mata uang kripto ini bersinggungan dengan ketergantungan \nIndonesia pada sektor energi untuk pertumbuhan dan pembangunan yang berkelanjutan.&#39;, &#39;Memahami interaksi antara investasi mata uang kripto dan volatilitas pasar sangat penting bagi \nperusahaan energi di Indonesia (Naeem et al., 2023).&#39;, &#39;Penelitian ini menunjukkan bahwa pasar \nalternatif yang bersih dan mata uang kripto spesifik seperti ETH adalah pemancar risiko bersih ke \npasar lain, yang menyoroti potensi konsekuensi bagi perusahaan energi (Anisa et al., 2023).&#39;, &#39;Selain \nitu, penelitian ini mengungkapkan bahwa integrasi antara mata uang kripto dan kelas aset \ntradisional bervariasi di berbagai skala waktu, dengan hubungan yang lebih kuat yang diamati \ndalam jangka menengah (Siwy et al., 2023).&#39;, &#39;Hal ini menunjukkan bahwa dampak investasi mata \nuang kripto terhadap volatilitas pasar dapat berimplikasi pada perusahaan-perusahaan energi di \nIndonesia, sehingga menekankan perlunya analisis dan pemahaman lebih lanjut mengenai \nhubungan ini (Annamalaisamy &amp; Vepur Jayaraman, 2023).&#39;, &#39;Tujuan utama dari penelitian ini adalah \nuntuk menyelidiki dinamika yang rumit antara tren mata uang kripto, fluktuasi pasar, dan kinerja \nkeuangan perusahaan-perusahaan energi di Indonesia.&#39;, &#39;Sanskara Akuntansi dan Keuangan (SAK)  \n \n \n \n \n \n      \uf072 \nVol.&#39;, &#39;2, No.02, Januari 2024, hal.&#39;, &#39;90-99 \n92 \n \nInvestasi \nCryptocurrency \nVolatilitas Pasar \nProfitabilitas \n2.&#39;, &#39;TINJAUAN PUSTAKA \n2.1 Tren Investasi Mata Uang Kripto \nEvolusi investasi mata uang kripto telah dipelajari secara ekstensif dalam literatur.&#39;, &#39;Penelitian awal berfokus pada Bitcoin sebagai perintis mata uang digital terdesentralisasi \nyang berpotensi sebagai lindung nilai terhadap instrumen keuangan tradisional (Hossaion \net al., 2023).&#39;, &#39;Penelitian selanjutnya mengeksplorasi strategi diversifikasi, dampak regulasi, \ndan kemunculan mata uang kripto alternatif (altcoin) (Shaturaev, 2023).&#39;, &#39;Penelitian terbaru \nmenunjukkan penerimaan yang semakin meningkat terhadap mata uang kripto sebagai \nkelas aset yang dapat diinvestasikan, dengan investor institusional memasuki pasar \n(Almeida &amp; Gonçalves, 2023).&#39;, &#39;Memahami tren historis dalam investasi mata uang kripto \nsangat penting untuk menganalisis konteks Indonesia (Kahraman, 2023).&#39;, &#39;2.2 Volatilitas Pasar Mata Uang Kripto \nVolatilitas pasar mata uang kripto dipengaruhi oleh berbagai faktor, termasuk \nketidakdewasaan pasar, kendala likuiditas, pengumuman regulasi, perkembangan \nteknologi, indikator makroekonomi, analisis sentimen, penilaian likuiditas pasar, \nperdagangan algoritmik, dan keterkaitan antara pasar mata uang kripto dengan pasar \nkeuangan tradisional.&#39;, &#39;Memahami sifat volatilitas pasar sangat penting untuk menilai \nimplikasinya terhadap profitabilitas perusahaan yang beroperasi di sektor yang terdampak \noleh aset digital, seperti industri energi (Donoiu &amp; Iacob, 2023; Iqbal et al., 2023; Juwita* et \nal., 2023).&#39;, &#39;2.3 Profitabilitas Perusahaan Energi \nKinerja keuangan perusahaan energi adalah topik yang menarik dalam literatur \nakademis dan industri.&#39;, &#39;Berbagai metrik digunakan untuk menilai profitabilitas mereka, \ntermasuk laba atas investasi, margin laba, dan efisiensi operasional.&#39;, &#39;Studi-studi \nmempertimbangkan faktor-faktor seperti geopolitik, regulasi, dan kemajuan teknologi \ndalam menganalisis dinamika keuangan sektor ini (Nugrahanti, 2016; Nugrahanti &amp; Jahja, \n2018, 2018; Nugrahanti &amp; Pratiwi, 2023).&#39;, &#39;Penelitian terbaru juga berfokus pada transisi \nmenuju sumber energi berkelanjutan dan terbarukan, dengan memperkenalkan variabel-\nvariabel tambahan yang memengaruhi profitabilitas perusahaan energi.&#39;, &#39;Memahami lanskap \nprofitabilitas perusahaan energi sangat penting untuk mengevaluasi bagaimana faktor \neksternal, seperti investasi mata uang kripto dan volatilitas pasar, dapat memengaruhi \nkelangsungan ekonomi mereka (Joaqui-Barandica &amp; Manotas-Duque, 2023; Makridou et al., \n2023; Shahzad et al., 2023).&#39;, &#39;Gambar 1.&#39;, &#39;Kerangka Konseptual \n3.&#39;, &#39;METODE PENELITIAN \n3.1 Desain Penelitian \nPenelitian kuantitatif ini mengadopsi desain penelitian cross-sectional untuk \nmendapatkan gambaran hubungan antara investasi mata uang kripto, volatilitas pasar, dan \nprofitabilitas perusahaan energi di Indonesia.&#39;, &#39;Sumber data primer dan sekunder akan \ndigunakan untuk memastikan pemahaman yang komprehensif mengenai variabel-variabel \nyang diteliti.&#39;, &#39;Sanskara Akuntansi dan Keuangan (SAK)  \n \n \n \n \n \n      \uf072 \nVol.&#39;, &#39;2, No.02, Januari 2024, hal.&#39;, &#39;90-99 \n93 \n3.2 Pengumpulan Data \nTeknik pengambilan sampel acak berstrata akan digunakan untuk memilih sampel \nyang representatif dari 200 peserta dari investor mata uang kripto dan eksekutif perusahaan \nenergi di Indonesia.&#39;, &#39;Survei akan didistribusikan secara elektronik, dengan peserta yang \ndipilih dari strata yang berbeda, seperti kelompok usia yang berbeda, latar belakang \nprofesional, dan tingkat pengalaman dalam investasi mata uang kripto.&#39;, &#39;Survei ini akan \nmencakup pertanyaan-pertanyaan mengenai pola investasi, persepsi risiko, dan kriteria \npengambilan keputusan untuk investor mata uang kripto.&#39;, &#39;Untuk para eksekutif perusahaan \nenergi, survei ini akan berfokus pada dampak tren pasar dan dinamika mata uang kripto \nterhadap strategi keuangan dan kinerja bisnis secara keseluruhan.&#39;, &#39;3.3 Pengambilan Sampel \nJumlah sampel sebanyak 200 ditentukan berdasarkan pertimbangan statistik untuk \nmemastikan keandalan dan validitas temuan.&#39;, &#39;Pengambilan sampel terstratifikasi bertujuan \nuntuk mewakili berbagai latar belakang demografi dan profesional, memberikan \npandangan holistik tentang investor mata uang kripto dan eksekutif perusahaan energi di \nIndonesia.&#39;, &#39;3.4 Variabel \nTabel 1.&#39;, &#39;Item Indikator \nVariabel \nKode \nItem \nReferensi \nInvestasi \nCryptocurrency (IC) \nIC.1 \n1.&#39;, &#39;Facilitating Condition \n(Perayunda &amp; \nMahyuni, 2022; \nPranata, 2023; Rizki &amp; \nSuryokencono, 2023) \nIC.2 \n2.&#39;, &#39;Risk Tolerance \nIC.3 \n3.&#39;, &#39;Herding Bias \nIC.4 \n4.&#39;, &#39;Overconfidence Bias \nVolatilitas Pasar \n(VP) \nVP.1 \n1.&#39;, &#39;Economic \n(Chun et al., 2020; \nDaniali et al., 2021; Li \net al., 2022; Personal &amp; \nArchive, 2017; Rhouas \net al., 2022) \nVP.2 \n2.&#39;, &#39;Sentiment \nVP.3 \n3.&#39;, &#39;Financial Stress Indices \nVP.4 \n4.&#39;, &#39;Macroeconomic Uncertainty \nVP.5 \n5.&#39;, &#39;Liquidity Ratio \nVP.6 \n6.&#39;, &#39;Technical Indicators \nProfitabilitas (PF) \nPF.1 \n1.&#39;, &#39;Gross Profit Margin \n(Advanced \nTechnology Program, \n2003; Delcroix, 2016; \nRaucci &amp; Tarquinio, \n2015) \nPF.2 \n2.&#39;, &#39;Operating Expenses \nPF.3 \n3.&#39;, &#39;Operating Profit \nPF.4 \n4.&#39;, &#39;Net Profit Margin \nPF.5 \n5.&#39;, &#39;EBITDA \nSumber: Literatur \n3.5 Analisa Data \nStructural Equation Modeling (SEM) dengan Partial Least Squares (PLS) akan \ndigunakan untuk analisis data.&#39;, &#39;SEM-PLS cocok untuk penelitian ini karena memungkinkan \nuntuk menguji hubungan yang kompleks di antara beberapa variabel, mengakomodasi \nmodel pengukuran dan model struktural secara bersamaan (Carrasco, 2010).&#39;, &#39;Metode ini \nsangat efektif untuk ukuran sampel yang lebih kecil dan distribusi data yang tidak normal \n(Perdana et al., 2023).&#39;, &#39;Analisis akan dilakukan dalam dua tahap: Model Pengukuran: \nAnalisis faktor konfirmatori akan dilakukan untuk menilai validitas dan reliabilitas \ninstrumen pengukuran untuk investasi mata uang kripto, volatilitas pasar, dan profitabilitas \nperusahaan energi (Kante &amp; Michel, 2023).&#39;, &#39;Model Struktural: Hubungan antara variabel \nakan diperiksa melalui model struktural, memberikan wawasan tentang efek langsung dan \ntidak langsung dari investasi mata uang kripto dan volatilitas pasar terhadap profitabilitas \nperusahaan energi (Hair &amp; Alamer, 2022).&#39;, &#39;Perangkat lunak statistik seperti SmartPLS akan \ndigunakan untuk analisis SEM-PLS, yang memungkinkan pemeriksaan yang kuat terhadap \nhipotesis yang diajukan (Bollen et al., 2022).&#39;, &#39;Sanskara Akuntansi dan Keuangan (SAK)  \n \n \n \n \n \n      \uf072 \nVol.&#39;, &#39;2, No.02, Januari 2024, hal.&#39;, &#39;90-99 \n94 \n4.&#39;, &#39;HASIL DAN PEMBAHASAN \n4.1 Hasil \na. Demografi Sampel \nSurvei ini berhasil mengumpulkan tanggapan dari sampel yang terdiri dari 200 \npartisipan, termasuk investor mata uang kripto dan eksekutif perusahaan energi di \nIndonesia.&#39;, &#39;Analisis demografis memberikan wawasan tentang karakteristik para \npeserta, sehingga meningkatkan pemahaman tentang komposisi sampel.&#39;, &#39;Karakteristik \ndemografis peserta dalam penelitian ini mencerminkan representasi yang seimbang di \nberbagai kelompok usia, dengan peserta berusia antara 18 hingga 25 tahun (12,5%), 26 \nhingga 35 tahun (30%), 36 hingga 45 tahun (25%), 46 hingga 55 tahun (20%), dan 56 tahun \nke atas (12,5%).&#39;, &#39;Sampel ini mencakup investor mata uang kripto (60%) dan eksekutif \nperusahaan energi (40%), memberikan pandangan yang komprehensif tentang \nperspektif dari kedua sisi lanskap keuangan.&#39;, &#39;Para peserta juga memiliki tingkat \npengalaman investasi mata uang kripto yang beragam, dengan beberapa di antaranya \nadalah pemula (15%), investor menengah (40%), investor mahir (25%), dan ahli (20%).&#39;, &#39;Dalam hal latar belakang pendidikan, para peserta memiliki kualifikasi yang beragam, \ntermasuk gelar sarjana (40%), gelar master (35%), gelar doktor (10%), dan sertifikasi \nprofesional (15%).&#39;, &#39;Karakteristik demografis ini memastikan pemahaman yang beragam \ndan komprehensif tentang investasi mata uang kripto dan keterlibatan sektor energi.&#39;, &#39;b. Validitas dan Reliabilitas \nAnalisis model pengukuran menilai validitas dan reliabilitas konstruk, \ntermasuk Investasi Mata Uang Kripto (IC), Volatilitas Pasar (VP), dan Profitabilitas (PF).&#39;, &quot;Faktor-faktor pemuatan, Cronbach&#39;s alpha, reliabilitas komposit, dan nilai average variance \nextracted (AVE) menunjukkan ketahanan model.&quot;, &#39;Tabel 2.&#39;, &#39;Validitas dan Reliabilitas \nVariabel \nKode \nLoading \nFactor \nCronbach’s \nAlpha \nComposite \nReliability \nAverage Variant \nExtracted \nInvestasi \nCryptocurrency (IC) \nIC.1 \n0.872 \n0.908 \n0.935 \n0.783 \nIC.2 \n0.920 \nIC.3 \n0.896 \nIC.4 \n0.851 \nVolatilitas Pasar (VP) \nVP.1 \n0.860 \n0.907 \n0.928 \n0.682 \nVP.2 \n0.838 \nVP.3 \n0.792 \nVP.4 \n0.859 \nVP.5 \n0.794 \nVP.6 \n0.809 \nProfitabilitas (PF) \n \nPF.1 \n0.792 \n0.857 \n0.897 \n0.636 \nPF.2 \n0.758 \nPF.3 \n0.767 \nPF.4 \n0.801 \nPF.5 \n0.864 \nSumber: Hasil pengolahan data oleh peneliti (2024) \nHasil model pengukuran menunjukkan bahwa konstruk, termasuk Investasi \nMata Uang Kripto, Volatilitas Pasar, dan Profitabilitas, menunjukkan tingkat keandalan \ndan validitas yang tinggi.&#39;, &#39;Faktor-faktor pemuatan untuk setiap indikator jauh di atas \nambang batas yang direkomendasikan yaitu 0,7, yang menunjukkan hubungan yang \nkuat antara indikator yang diamati dan konstruk laten masing-masing.&#39;, &#39;Nilai alpha \nCronbach untuk semua konstruk melebihi 0,8, menandakan konsistensi internal yang \nsangat baik dalam setiap konstruk.&#39;, &#39;Nilai reliabilitas komposit memvalidasi lebih lanjut \n\x0cSanskara Akuntansi dan Keuangan (SAK)  \n \n \n \n \n \n      \uf072 \nVol.&#39;, &#39;2, No.02, Januari 2024, hal.&#39;, &#39;90-99 \n95 \nreliabilitas konstruk, melampaui ambang batas yang direkomendasikan yaitu 0,7.&#39;, &#39;Nilai \nAVE, meskipun sedikit bervariasi, secara umum memenuhi kriteria yang dapat diterima \nyaitu 0,5, yang mengindikasikan bahwa sebagian besar varians dalam konstruk \nditangkap oleh indikator masing-masing.&#39;, &#39;Tabel 3.&#39;, &#39;Validitas Diskriminan \nVariabel \nInvestasi Cryptocurrency \nProfitabilitas \nVolatilitas Pasar \nInvestasi Cryptocurrency \n0.815 \n \n \nProfitabilitas \n0.814 \n0.797 \n \nVolatilitas Pasar \n0.713 \n0.836 \n0.826 \nSumber: Data pengolahan penelitian oleh peneliti (2024) \nMatriks HMTH mengungkapkan bahwa korelasi kuadrat antara setiap \npasangan konstruk kurang dari nilai AVE untuk masing-masing konstruk, yang \nmengindikasikan validitas diskriminan.&#39;, &#39;Korelasi kuadrat antara Investasi Mata Uang \nKripto dan Profitabilitas (0,815) kurang dari nilai AVE untuk kedua konstruk (0,783 dan \n0,636, masing-masing), yang mengonfirmasi validitas diskriminan di antara konstruk-\nkonstruk ini.&#39;, &#39;Demikian pula, korelasi kuadrat antara Investasi Mata Uang Kripto dan \nVolatilitas Pasar (0,713) kurang dari nilai AVE untuk kedua konstruk (0,783 dan 0,682, \nmasing-masing), yang mengkonfirmasi validitas diskriminan antara konstruk-konstruk \nini.&#39;, &#39;Selain itu, korelasi kuadrat antara Profitabilitas dan Volatilitas Pasar (0,836) kurang \ndari nilai AVE untuk kedua konstruk (0,636 dan 0,682), yang mengkonfirmasi validitas \ndiskriminan antara konstruk-konstruk ini.&#39;, &#39;Tabel 4.&#39;, &#39;Inner VIF Model \nVariable \nVIF Values \nInvestasi Cryptocurrency → Profitabilitas \n2.033 \nVolatilitas Pasar → Profitabilitas \n2.033 \nSumber: Hasil pengolahan data peneliti (2024) \nNilai VIF untuk kedua hubungan tersebut adalah sekitar 2,033, yang berada di \nbawah ambang batas yang diterima secara umum yaitu 3.000.&#39;, &#39;Nilai VIF di sekitar 2 \nmenunjukkan tingkat multikolinieritas yang rendah, menunjukkan bahwa tidak ada \nkorelasi yang signifikan antara variabel prediktor (Investasi Cryptocurrency dan \nVolatilitas Pasar) dalam memprediksi variabel dependen (Profitabilitas).&#39;, &#39;Gambar 1.&#39;, &#39;Model Penilaian Internal \nSumber: Data yang diolah oleh peneliti, 2024 \n\x0cSanskara Akuntansi dan Keuangan (SAK)  \n \n \n \n \n \n      \uf072 \nVol.&#39;, &#39;2, No.02, Januari 2024, hal.&#39;, &#39;90-99 \n96 \nc. \nKecocokan Model \nIndeks kecocokan model digunakan untuk menilai seberapa baik model \nstruktural yang diusulkan sesuai dengan data yang diamati.&#39;, &#39;Kombinasi dari ukuran-\nukuran goodness-of-fit memberikan wawasan tentang kecukupan model.&#39;, &#39;Nilai \nStandardized Root Mean Square Residual (SRMR) sebesar 0,075 menunjukkan kecocokan \nyang baik, karena berada di bawah ambang batas yang diterima secara umum yaitu 0,08.&#39;, &#39;Nilai Normed Fit Index (NFI) sebesar 0,90 menunjukkan kecocokan yang memuaskan, \ndengan nilai di atas 0,90 secara umum dianggap dapat diterima.&#39;, &#39;Namun, NFI harus \nditafsirkan bersama dengan indeks kecocokan lainnya.&#39;, &#39;Variance Explained (R²) untuk \nProfitabilitas adalah 88%, yang menunjukkan bahwa model menjelaskan sebagian besar \nvarians dalam Profitabilitas.&#39;, &#39;Hal ini menunjukkan bahwa variabel-variabel prediktor \nmemberikan kontribusi yang signifikan dalam menjelaskan variasi yang diamati dalam \nvariabel dependen.&#39;, &#39;d. Analisis Jalur \nAnalisis model struktural memberikan wawasan tentang hubungan antara \nvariabel prediktor (Investasi Mata Uang Kripto dan Volatilitas Pasar) dan variabel \ndependen (Profitabilitas).&#39;, &#39;Tabel 5.&#39;, &#39;Hasil Hipotesis \n \nOriginal \nSample (O) \nSample \nMean (M) \nStandard \nDeviation \n(STDEV) \nT Statistics \n(|O/STDEV|) \nP \nValues \nInvestasi \nCryptocurrency -&gt; \nProfitabilitas \n0.607 \n0.604 \n0.051 \n11.938 \n0.000 \nVolatilitas Pasar -&gt; \nProfitabilitas \n0.403 \n0.407 \n0.055 \n7.328 \n0.000 \n \nSumber: Pengolahan data oleh peneliti (2024) \nKoefisien positif sebesar 0,607 untuk hubungan antara Investasi Mata Uang \nKripto dan Profitabilitas menunjukkan dampak positif yang signifikan.&#39;, &#39;Statistik T \nsebesar 11,938, dengan nilai p-value sebesar 0,000, menunjukkan bahwa hubungan \ntersebut signifikan secara statistik.&#39;, &#39;Demikian pula, koefisien positif sebesar 0,403 untuk \nhubungan antara Volatilitas Pasar dan Profitabilitas menunjukkan dampak positif yang \nsignifikan.&#39;, &#39;Statistik T sebesar 7,328, dengan nilai p-value sebesar 0,000, menunjukkan \nbahwa hubungan tersebut signifikan secara statistik.&#39;, &#39;4.2 Pembahasan \na. Investasi Mata Uang Kripto dan Profitabilitas \nPeningkatan investasi dalam mata uang kripto di Indonesia dikaitkan dengan \nprofitabilitas yang lebih tinggi untuk perusahaan energi.&#39;, &#39;Jumlah investor mata uang \nkripto di Indonesia terus meningkat, melampaui jumlah investor saham.&#39;, &#39;Imbal hasil dan \nrisiko mata uang kripto ditemukan berbeda secara signifikan dengan saham Syariah, \ndengan risiko mata uang kripto yang lebih tinggi.&#39;, &#39;Niat perilaku untuk berinvestasi \ndalam mata uang kripto dipengaruhi oleh efek sosial, dukungan regulasi, dan faktor \nkepercayaan.&#39;, &#39;Literasi keuangan memainkan peran penting dalam mempengaruhi \nkeputusan investasi, dengan risiko yang dirasakan dan perilaku menggiring yang \nmemediasi hubungan antara literasi keuangan dan keputusan investasi.&#39;, &#39;Meningkatkan \nliterasi keuangan penting bagi investor, terutama mahasiswa, sebelum berinvestasi \ndalam mata uang kripto.&#39;, &#39;Selain itu, investor harus menyadari dampak potensial dari \nperilaku herding dan risiko yang dirasakan pada keputusan investasi mereka (Ahmadi, \n2023; Handayani et al., 2023; Rahyuda &amp; Candradewi, 2023; Restuputri et al., 2023;  et \n\x0cSanskara Akuntansi dan Keuangan (SAK)  \n \n \n \n \n \n      \uf072 \nVol.&#39;, &#39;2, No.02, Januari 2024, hal.&#39;, &#39;90-99 \n97 \nal., 2023).&#39;, &#39;Temuan ini menyoroti potensi dampak positif dari penggunaan aset digital \nterhadap kinerja keuangan.&#39;, &#39;b. Volatilitas Pasar dan Profitabilitas \nBerlawanan dengan ekspektasi, hubungan positif antara Volatilitas Pasar dan \nProfitabilitas menunjukkan bahwa volatilitas pasar yang lebih tinggi bertepatan dengan \npeningkatan profitabilitas perusahaan energi.&#39;, &#39;Hasil yang tidak terduga ini mendorong \neksplorasi lebih lanjut tentang bagaimana perusahaan-perusahaan energi menavigasi \ndan memanfaatkan kondisi pasar yang dinamis.&#39;, &#39;4.3 Implikasi dan Rekomendasi \nTemuan ini menunjukkan peluang bagi investor dan pemangku kepentingan untuk \nmemanfaatkan investasi mata uang kripto untuk meningkatkan profitabilitas.&#39;, &#39;Para pembuat \nkebijakan harus mempertimbangkan kerangka kerja regulasi untuk memastikan integrasi \naset digital yang bertanggung jawab di sektor energi.&#39;, &#39;Para pemangku kepentingan industri \ndapat mengambil manfaat dari strategi yang memanfaatkan volatilitas pasar untuk hasil \nkeuangan yang lebih baik.&#39;, &#39;4.4 Keterbatasan dan Penelitian di Masa Depan \nDengan menyadari adanya keterbatasan, seperti sifat cross-sectional dari penelitian \nini dan fokus pada konteks Indonesia, penelitian di masa depan dapat mengeksplorasi \nanalisis longitudinal dan memperluas penelitian ini ke wilayah geografis lainnya.&#39;, &#39;Selain itu, \nmengeksplorasi sub-sektor industri tertentu di dalam industri energi dapat memberikan \nwawasan yang lebih beragam.&#39;, &#39;5.&#39;, &#39;KESIMPULAN \nKesimpulannya, penelitian ini menyoroti hubungan yang rumit antara investasi mata uang \nkripto, volatilitas pasar, dan profitabilitas perusahaan energi di Indonesia.&#39;, &#39;Penelitian ini, yang \ndidasarkan pada metodologi yang solid, menetapkan keandalan dan validitas model pengukuran \ndan mengungkap hubungan positif yang tak terduga antara investasi mata uang kripto, volatilitas \npasar, dan profitabilitas.&#39;, &#39;Temuan ini menantang kebijaksanaan konvensional dan menawarkan \nwawasan unik ke dalam dinamika sektor energi Indonesia.&#39;, &#39;Hasil penelitian ini membawa implikasi \nbagi para investor yang mencari peluang di dunia mata uang kripto dan perusahaan-perusahaan \nenergi yang ingin mengoptimalkan kinerja keuangan.&#39;, &#39;Seiring dengan semakin matangnya pasar \nmata uang kripto, para pemangku kepentingan harus menyesuaikan strategi untuk memanfaatkan \npotensi keuntungan yang disoroti dalam penelitian ini.&#39;, &#39;Penelitian ini berkontribusi pada wacana \nyang sedang berlangsung tentang perpaduan antara aset digital dan industri tradisional, membuka \njalan untuk eksplorasi dan penelitian lebih lanjut di bidang yang berkembang pesat ini.&#39;, &#39;DAFTAR PUSTAKA \nAdvanced Technology Program.&#39;, &#39;(2003).&#39;, &#39;Technolog y Adoption Indicators Applied to the ATP Flow-Control Machining \nProject.&#39;, &#39;NISTIR 6888.&#39;, &#39;Ahmadi, H. (2023).&#39;, &#39;Is Cryptocurrency Risky as An Investment Instrument?&#39;, &#39;Analysis of Return and Risk with A \nComparison \nof \nSharia \nStocks.&#39;, &#39;International \nJournal \nof \nIslamic \nBusiness \nEthics, \n8(1), \n40. \nhttps://doi.org/10.30659/ijibe.8.1.40-53 \nAlmeida, J., &amp; Gonçalves, T. C. (2023).&#39;, &#39;A Decade of Cryptocurrency Investment Literature: A Cluster-Based \nSystematic \nAnalysis.&#39;, &#39;In \nInternational \nJournal \nof \nFinancial \nStudies \n(Vol.&#39;, &#39;11, \nIssue \n2).&#39;, &#39;https://doi.org/10.3390/ijfs11020071 \nAnisa, D., Anggraini, T., &amp; Tambunan, K. (2023).&#39;, &#39;Analisis Cryptocurrency Sebagai Alat Alternatif Berinvestasi \nDi Indonesia.&#39;, &#39;Owner, 7(3), 2674–2682.&#39;, &#39;https://doi.org/10.33395/owner.v7i3.1698 \nAnnamalaisamy, B., &amp; Vepur Jayaraman, S. (2023).&#39;, &#39;Do cryptocurrencies integrate with the indices of equity, \nsustainability, clean energy, and crude oil?&#39;, &#39;A wavelet coherency approach.&#39;, &#39;International Journal of Finance \n\x0cSanskara Akuntansi dan Keuangan (SAK)  \n \n \n \n \n \n      \uf072 \nVol.&#39;, &#39;2, No.02, Januari 2024, hal.&#39;, &#39;90-99 \n98 \n&amp; Economics, n/a(n/a).&#39;, &#39;https://doi.org/https://doi.org/10.1002/ijfe.2843 \nBollen, K. A., Fisher, Z. F., Giordano, M. L., Lilly, A. G., Luo, L., &amp; Ye, A.&#39;, &#39;(2022).&#39;, &#39;An introduction to model \nimplied instrumental variables using two stage least squares (MIIV-2SLS) in structural equation models \n(SEMs).&#39;, &#39;Psychological Methods, 27(5), 752.&#39;, &#39;Carrasco, J. L. (2010).&#39;, &#39;Structural Equation Model.&#39;, &#39;Encyclopedia of Biopharmaceutical Statistics, 8(3), 1300–1305.&#39;, &#39;https://doi.org/10.3109/9781439822463.209 \nChun, D., Cho, H., &amp; Ryu, D. (2020).&#39;, &#39;Economic indicators and stock market volatility in an emerging economy.&#39;, &#39;Economic Systems, 44(2), 100788. https://doi.org/https://doi.org/10.1016/j.ecosys.2020.100788 \nDaniali, S. M., Barykin, S. E., Kapustina, I. V, Mohammadbeigi Khortabi, F., Sergeev, S. M., Kalinina, O. V, \nMikhaylov, A., Veynberg, R., Zasova, L., &amp; Senjyu, T. (2021).&#39;, &#39;Predicting Volatility Index According to \nTechnical Index and Economic Indicators on the Basis of Deep Learning Algorithm.&#39;, &#39;In Sustainability (Vol.&#39;, &#39;13, Issue 24).&#39;, &#39;https://doi.org/10.3390/su132414011 \nDelcroix, F. (2016).&#39;, &#39;How to monitor the front end of innovation in the new product development: defining performance \nindicators.&#39;, &#39;Denura, S. C., &amp; Soekarno, S. (2023).&#39;, &#39;A Study on Behavioural Bias &amp; Investment Decision from Perspective of \nIndonesia’s Cryptocurrency Investors.&#39;, &#39;International Journal of Current Science Research and Review, 06(01), \n535–548.&#39;, &#39;https://doi.org/10.47191/ijcsrr/v6-i1-58 \nDonoiu, P. C., &amp; Iacob, D. (2023).&#39;, &#39;The Cryptocurrency Market and the Financial Stability.&#39;, &#39;Proceedings of the \nInternational Conference on Business Excellence, 17(1), 1769–1778.&#39;, &#39;https://doi.org/10.2478/picbe-2023-0157 \nGEHLOT, P. (2023).&#39;, &#39;Cryptocurrency And Technology: Could It Revolutionize The Economic Prosperity?&#39;, &#39;Russian Law Journal, 11. https://doi.org/10.52783/rlj.v11i2s.571 \nHair, J., &amp; Alamer, A.&#39;, &#39;(2022).&#39;, &#39;Partial Least Squares Structural Equation Modeling (PLS-SEM) in second language \nand education research: Guidelines using an applied example.&#39;, &#39;Research Methods in Applied Linguistics, 1(3), \n100027.&#39;, &#39;Handayani, D., Ikhsan, R. B., &amp; Prabowo, H. (2023).&#39;, &#39;Behavioral Intention to Invest Cryptocurrency in Indonesia: \nAn Empirical Study.&#39;, &#39;2023 8th International Conference on Business and Industrial Research (ICBIR), 84–89.&#39;, &#39;https://doi.org/10.1109/ICBIR57571.2023.10147507 \nHossaion, S., Bairagi, M., Aktar, J., Honey, U., &amp; Mithy, S. A.&#39;, &#39;(2023).&#39;, &#39;The Evolution of Bitcoin: A Historical \nAnalysis \nand \nFuture \nProspects.&#39;, &#39;IRASD \nJournal \nof \nEconomics, \n5(2 \nSE-Articles), \n241–252.&#39;, &#39;https://doi.org/10.52131/joe.2023.0502.0124 \nIqbal, F., Zahid, M., &amp; Koutmos, D. (2023).&#39;, &#39;Cryptocurrency Trading and Downside Risk.&#39;, &#39;In Risks (Vol.&#39;, &#39;11, Issue \n7).&#39;, &#39;https://doi.org/10.3390/risks11070122 \nJoaqui-Barandica, O., &amp; Manotas-Duque, D. (2023).&#39;, &#39;How do Climate and Macroeconomic Factors Affect the \nProfitability of the Energy Sector?&#39;, &#39;International Journal of Energy Economics and Policy, 13, 444–454.&#39;, &#39;https://doi.org/10.32479/ijeep.14303 \nJuwita*, R., Ramadhani, D. M., &amp; Maris, A. W. I.&#39;, &#39;(2023).&#39;, &#39;The Determinants of Cryptocurrency Returns.&#39;, &#39;Jurnal \nIlmu Keuangan Dan Perbankan (JIKA), 12(2), 235–246.&#39;, &#39;https://doi.org/10.34010/jika.v12i2.9461 \nKahraman, Y.&#39;, &#39;(2023).&#39;, &#39;Finance of the Digital Age: Cryptocurrencies.&#39;, &#39;https://doi.org/10.58830/ozgur.pub105.c644 \nKante, M., &amp; Michel, B.&#39;, &#39;(2023).&#39;, &#39;Use of partial least squares structural equation modelling (PLS-SEM) in privacy \nand disclosure research on social network sites: A systematic review.&#39;, &#39;Comput.&#39;, &#39;Hum.&#39;, &#39;Behav.&#39;, &#39;Rep, 10, 100291.&#39;, &#39;Li, X., Liang, C., &amp; Ma, F. (2022).&#39;, &#39;Forecasting stock market volatility with a large number of predictors: New \nevidence \nfrom \nthe \nMS-MIDAS-LASSO \nmodel.&#39;, &#39;Annals \nof \nOperations \nResearch.&#39;, &#39;https://doi.org/10.1007/s10479-022-04716-1 \nLuchkin, A. G., Lukasheva, O. L., Novikova, N. E., Melnikov, V. A., Zyatkova, A. V., &amp; Yarotskaya, E. V. (2020).&#39;, &#39;Cryptocurrencies in the Global Financial System: Problems and Ways to Overcome them.&#39;, &#39;148(RuDEcK), 423–430.&#39;, &#39;https://doi.org/10.2991/aebmr.k.200730.077 \nMakridou, G., Doumpos, M., &amp; Lemonakis, C. (2023).&#39;, &#39;Relationship between ESG and corporate financial \nperformance in the energy sector: empirical evidence from European companies.&#39;, &#39;International Journal of \nEnergy Sector Management, ahead-of-print(ahead-of-print).&#39;, &#39;https://doi.org/10.1108/IJESM-01-2023-0012 \nMiller, M., &amp; Prondzinski, D. (2023).&#39;, &#39;Cryptocurrency Digital Assets: Evidence of the Emergence of \nCryptocurrency Securities Markets as an Investment Asset Class, 2018-2023.&#39;, &#39;Journal of Accounting and \nFinance, 23(2 SE-Articles).&#39;, &#39;https://doi.org/10.33423/jaf.v23i2.6090 \nNaeem, M. A., Gul, R., Farid, S., Karim, S., &amp; Lucey, B. M. (2023).&#39;, &#39;Assessing linkages between alternative energy \nmarkets and cryptocurrencies.&#39;, &#39;Journal of Economic Behavior &amp; Organization, 211, 513–529.&#39;, &#39;https://doi.org/https://doi.org/10.1016/j.jebo.2023.04.035 \nNam, N. H. (2023).&#39;, &#39;Impact of cryptocurrencies on financial markets.&#39;, &#39;Journal of Social Sciences and Humanities, 65, \n\x0cSanskara Akuntansi dan Keuangan (SAK)  \n \n \n \n \n \n      \uf072 \nVol.&#39;, &#39;2, No.02, Januari 2024, hal.&#39;, &#39;90-99 \n99 \n3–15.&#39;, &#39;https://doi.org/10.31276/VMOSTJOSSH.65(2).03-15 \nNugrahanti, T. P. (2016).&#39;, &#39;Risk assessment and earning management in banking of Indonesia: corporate \ngovernance mechanisms.&#39;, &#39;Global Journal of Business and Social Science Review, 4(1), 1–9.&#39;, &#39;Nugrahanti, T. P., &amp; Jahja, A. S. (2018).&#39;, &#39;Audit judgment performance: The effect of performance incentives, \nobedience pressures and ethical perceptions.&#39;, &#39;Journal of Environmental Accounting and Management, 6(3), \n225–234.&#39;, &#39;Nugrahanti, T. P., &amp; Pratiwi, A. S. (2023).&#39;, &#39;The Remote Audit and Information Technology: The impact of Covid-\n19 Pandemics.&#39;, &#39;JABE (Journal Of Accounting And Business Education), 8(1), 15–39.&#39;, &#39;Pataki, P., &amp; Zörög, Z.&#39;, &#39;(2023).&#39;, &#39;Cryptocurrency Operating Principle, Market and Risks.&#39;, &#39;Acta Carolus Robertus, 13, \n62–75.&#39;, &#39;https://doi.org/10.33032/acr.3988 \nPerayunda, I. G. A. D., &amp; Mahyuni, L. P. (2022).&#39;, &#39;Faktor-Faktor Yang Mempengaruhi Keputusan Investasi \nCryptocurrency Pada Kaum Milenial.&#39;, &#39;EKUITAS (Jurnal Ekonomi Dan Keuangan), 6(3), 351–372.&#39;, &#39;https://doi.org/10.24034/j25485024.y2022.v6.i3.5224 \nPerdana, P. N., Armeliza, D., Khairunnisa, H., &amp; Nasution, H. (2023).&#39;, &#39;Research Data Processing Through \nStructural Equation Model-Partial Least Square (SEM-PLS) Method.&#39;, &#39;Jurnal Pemberdayaan Masyarakat \nMadani (JPMM), 7(1), 44–50.&#39;, &#39;Personal, M., &amp; Archive, R. (2017).&#39;, &#39;Munich Personal RePEc Archive Sentiment indicators and macroeconomic data as \ndrivers for low-frequency stock market volatility Sentiment indicators and macroeconomic data as drivers for.&#39;, &#39;80266.&#39;, &#39;Pranata, R. M. (2023).&#39;, &#39;Keputusan Investasi Cryptocurrency di Purwakarta: Mengungkap Dampak dari Herding \ndan \nOverconfidence.&#39;, &#39;Jurnal \nManajemen \n&amp; \nBisnis \nKreatif, \n9(1), \n62–72.&#39;, &#39;https://doi.org/10.36805/manajemen.v9i1.5502 \nRahyuda, H., &amp; Candradewi, M. (2023).&#39;, &#39;Determinants of cryptocurrency investment decisions (Study of \nstudents \nin \nBali).&#39;, &#39;Investment \nManagement \nand \nFinancial \nInnovations, \n20, \n193–204.&#39;, &#39;https://doi.org/10.21511/imfi.20(2).2023.17 \nRaucci, D., &amp; Tarquinio, L. (2015).&#39;, &#39;A Study of the Economic and Non-Financial Performance Indicators in \nCorporate \nSustainability \nReports.&#39;, &#39;Journal \nof \nSustainable \nDevelopment, \n8. \nhttps://doi.org/10.5539/jsd.v8n6p216 \nRestuputri, D. P., Refoera, F. B., &amp; Masudin, I.&#39;, &#39;(2023).&#39;, &#39;Investigating Acceptance of Digital Asset and Crypto \nInvestment Applications Based on the Use of Technology Model (UTAUT2).&#39;, &#39;In FinTech (Vol.&#39;, &#39;2, Issue 3, \npp.&#39;, &#39;388–413).&#39;, &#39;https://doi.org/10.3390/fintech2030022 \nRhouas, S., Bouchekourte, M., &amp; El hami, N. (2022).&#39;, &#39;Optimization of the impact measurement of market \nstructure on liquidity and volatility.&#39;, &#39;International Journal for Simulation and Multidisciplinary Design \nOptimization, 13, 9. https://doi.org/10.1051/smdo/2021040 \nRizki, F., &amp; Suryokencono, P. (2023).&#39;, &#39;Pertanggungjawaban Penyelenggara Investasi Bodong yang Memakai \nSkema Ponzi dengan Modus Investasi Cryptocurrency.&#39;, &#39;Indonesian Journal of Law and Justice, 1, 10. \nhttps://doi.org/10.47134/ijlj.v1i2.2013 \nShahzad, S. J. H., Ferrer, R., &amp; Bouri, E. (2023).&#39;, &#39;Systemic Risk in the Global Energy Sector: Structure, \nDeterminants \nand \nPortfolio \nManagement \nImplications.&#39;, &#39;Energy \nJournal, \n44(6), \n211–242.&#39;, &#39;https://doi.org/10.5547/01956574.44.6.ssha \nShaturaev, J.&#39;, &#39;(2023).&#39;, &#39;Impact of Cryptocurrency Market on the Performance of Stock Market An Empirical Study.&#39;, &#39;Munich Personal RePEc Archive, 118244.&#39;, &#39;Siwy, F. I. D., Dharmawan, M. S., &amp; Mayatopani, H. (2023).&#39;, &#39;Penggunaan Metode AHP dalam Menentukan \nCryptocurrency untuk Investasi.&#39;, &#39;JTIM\u202f: Jurnal Teknologi Informasi Dan Multimedia, 5(2 SE-Articles).&#39;, &#39;https://doi.org/10.35746/jtim.v5i2.321&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;kalimat&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                               kalimat
+0               Sanskara Akuntansi dan Keuangan \nVol.
+1                         2, No.02, Januari 2024, hal.
+2    90-99 \nISSN: 2985-7805, DOI: 10.58812/sak.v2i...
+3    Penelitian ini melibatkan sampel sebanyak \n20...
+4    Analisis model pengukuran menetapkan validitas...
+..                                                 ...
+295             Munich Personal RePEc Archive, 118244.
+296  Siwy, F. I. D., Dharmawan, M. S., &amp; Mayatopani...
+297  Penggunaan Metode AHP dalam Menentukan \nCrypt...
+298  JTIM : Jurnal Teknologi Informasi Dan Multimed...
+299             https://doi.org/10.35746/jtim.v5i2.321
+
+[300 rows x 1 columns]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;kalimat.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Untuk membuat word graph</p>
+<p>Lanjutkan dengan menggunakan <a class="reference external" href="https://www.geeksforgeeks.org/nlp/co-occurence-matrix-in-nlp/">https://www.geeksforgeeks.org/nlp/co-occurence-matrix-in-nlp/</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.corpus</span><span class="w"> </span><span class="kn">import</span> <span class="n">stopwords</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.tokenize</span><span class="w"> </span><span class="kn">import</span> <span class="n">word_tokenize</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">Counter</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># Download NLTK resources</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
+
+<span class="c1"># ==== BACA FILE CSV ====</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;kalimat.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># Ambil semua teks dalam satu string</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">))</span>
+
+<span class="c1"># Preprocess the text</span>
+<span class="c1"># Menggunakan stopwords bahasa Indonesia</span>
+<span class="n">stop_words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;indonesian&#39;</span><span class="p">))</span>
+<span class="n">words</span> <span class="o">=</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+<span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">word</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">word</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span> <span class="ow">and</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words</span><span class="p">]</span>
+
+<span class="c1"># Define the window size for co-occurrence</span>
+<span class="n">window_size</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="c1"># Create a list of co-occurring word pairs</span>
+<span class="n">co_occurrences</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="n">Counter</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span> <span class="o">-</span> <span class="n">window_size</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">),</span> <span class="n">i</span> <span class="o">+</span> <span class="n">window_size</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">j</span><span class="p">:</span>
+            <span class="n">co_occurrences</span><span class="p">[</span><span class="n">word</span><span class="p">][</span><span class="n">words</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="c1"># Create a list of unique words</span>
+<span class="n">unique_words</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">words</span><span class="p">))</span>
+
+<span class="c1"># Initialize the co-occurrence matrix</span>
+<span class="n">co_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">unique_words</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">unique_words</span><span class="p">)),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="c1"># Populate the matrix</span>
+<span class="n">word_index</span> <span class="o">=</span> <span class="p">{</span><span class="n">word</span><span class="p">:</span> <span class="n">idx</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">unique_words</span><span class="p">)}</span>
+<span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">neighbors</span> <span class="ow">in</span> <span class="n">co_occurrences</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">neighbor</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">neighbors</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">co_matrix</span><span class="p">[</span><span class="n">word_index</span><span class="p">[</span><span class="n">word</span><span class="p">]][</span><span class="n">word_index</span><span class="p">[</span><span class="n">neighbor</span><span class="p">]]</span> <span class="o">=</span> <span class="n">count</span>
+
+<span class="c1"># DataFrame output</span>
+<span class="n">co_matrix_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">co_matrix</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">unique_words</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">unique_words</span><span class="p">)</span>
+<span class="n">co_matrix_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+</pre></div>
+</div>
+<div class="output text_html">
+  <div id="df-a52afa5d-3061-41e8-8349-772d820a0647" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>melibatkan</th>
+      <th>pemancar</th>
+      <th>sisi</th>
+      <th>rahyuda</th>
+      <th>industrial</th>
+      <th>i</th>
+      <th>in</th>
+      <th>law</th>
+      <th>manajemen</th>
+      <th>sharia</th>
+      <th>...</th>
+      <th>memperluas</th>
+      <th>menengah</th>
+      <th>loso</th>
+      <th>regulasi</th>
+      <th>berbeda</th>
+      <th>fokus</th>
+      <th>pemain</th>
+      <th>hair</th>
+      <th>securities</th>
+      <th>nam</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>melibatkan</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>pemancar</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>sisi</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>rahyuda</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>industrial</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>fokus</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>pemain</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>hair</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>securities</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>nam</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>992 rows × 992 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a52afa5d-3061-41e8-8349-772d820a0647')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-a52afa5d-3061-41e8-8349-772d820a0647 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-a52afa5d-3061-41e8-8349-772d820a0647');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-4c58e6d4-d586-4c5f-80f4-f6efdd82824b">
+      <button class="colab-df-quickchart" onclick="quickchart('df-4c58e6d4-d586-4c5f-80f4-f6efdd82824b')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-4c58e6d4-d586-4c5f-80f4-f6efdd82824b button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+  <div id="id_31ed352e-8a1d-4834-9c08-1c3716f61b4d">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('co_matrix_df')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_31ed352e-8a1d-4834-9c08-1c3716f61b4d button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('co_matrix_df');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">networkx</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nx</span>
+<span class="n">arr</span> <span class="o">=</span> <span class="n">co_matrix_df</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+<span class="n">G</span><span class="o">=</span><span class="n">nx</span><span class="o">.</span><span class="n">from_numpy_array</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>%%capture
+!pip install networkx
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">networkx</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nx</span>
+
+<span class="c1"># Create a dictionary to map node indices back to words</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">{</span><span class="n">i</span><span class="p">:</span> <span class="n">word</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">unique_words</span><span class="p">)}</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Graf co-occurence (Dengan Label Kata)&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/8ce379be0feb4c71be1b26182c7bd80fabcebe6dc3234b26750f53629bb41140.png" src="_images/8ce379be0feb4c71be1b26182c7bd80fabcebe6dc3234b26750f53629bb41140.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Jumlah kata (nodes) dalam graf: </span><span class="si">{</span><span class="n">G</span><span class="o">.</span><span class="n">number_of_nodes</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jumlah kata (nodes) dalam graf: 992
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="pta_graph_analysis.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Analisis Graph Data dari pta_graph.xlsx</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
