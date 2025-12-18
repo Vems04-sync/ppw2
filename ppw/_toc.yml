@@ -39,12 +39,15 @@ chapters:
 - file: pta_graph_analysis
   title: PTA Graph Analysis
 
-- file: word_graph_pdf
-  title: Word Graph PDF
-
 - file: analisis_dataset_nasa
   title: Analisis Dataset Nasa
 
+- file: facebook_community
+  title: Graph Favebook Community
+
+- file: word_graph_pdf
+  title: Word Graph PDF
+
 - file: word_graph_UAS
-  title: Word Graph Uas
+  title: Word Graph UAS
   
